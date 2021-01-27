@@ -8,7 +8,7 @@ namespace Romanchikov.GameCore
     public class AsyncProcessorMono : MonoBehaviour, IAsyncProcessor
     {
         public Coroutine StartCoroutine(IEnumerator coroutine) => base.StartCoroutine(coroutine);
-        public void StopCoroutine(Coroutine coroutine) => this.StopCoroutine(coroutine);
+        public void StopCoroutine(Coroutine coroutine) => base.StopCoroutine(coroutine);
 
 
         public void DoWithDelay(Action func, float delay)
